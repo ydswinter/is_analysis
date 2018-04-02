@@ -37,7 +37,12 @@ fork;
 if(有不及格?) then (有)
     :安排补考;
     endif
+    fork
     :补考安排表>
+    detach
+    fork again
+
+    end fork
 
 |教师|
 fork again;
@@ -46,5 +51,5 @@ fork again;
 end fork
 :期末流程结束;
 
-end
+stop
 @enduml
