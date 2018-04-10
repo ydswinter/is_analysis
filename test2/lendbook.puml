@@ -1,0 +1,30 @@
+@startuml
+start
+:图书管理员登录;
+:验证借书卡;
+
+
+if(满足借书条件？) then (是)
+    while(还有图书且仍满足借书条件?) is (是)
+    :输入图书编号查询;
+    :点击借阅;
+    :系统记录借阅信息;
+    if(有预定信息) then(是)
+        :删除预定信息;
+        else (否)
+    endif
+    :修改图书状态和可借数量;
+     end while(否)
+     :确认借书完成;
+    else (否)
+     split
+    :非法读者;
+    split again
+    :借书数已达到限额;
+    end split
+    :拒绝操作;
+endif
+:借阅结束;
+end
+
+@enduml
