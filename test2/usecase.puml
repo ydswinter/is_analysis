@@ -1,0 +1,21 @@
+@startuml
+actor 读者 as r
+actor 图书管理员 as m
+actor 游客 as v
+left to right direction
+rectangle 图书管理系统用例图{
+    r ---> (查询书目)
+    r ---> (查询借阅情况)
+    r ---> (预定图书)
+    r ---> (取消预定)
+    r ---> (申请续借)
+
+    m ---> (借出图书)
+    m ---> (归还图书)
+    m ---> (维护书目)
+    m ---> (维护读者信息)
+    m ---> (管理员登录)
+
+    v ---> (查询书目)
+}
+@enduml
