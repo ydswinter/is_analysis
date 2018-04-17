@@ -1,0 +1,8 @@
+@startuml
+object manager{
+    id = "0303023"
+    password = "88888888"
+    name = "yds"
+    role = "m"
+}
+@enduml

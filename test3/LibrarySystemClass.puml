@@ -1,0 +1,57 @@
+@startuml
+
+
+class Book{
+    -ISBN
+    -name
+    -publisher
+    -price
+    -editor
+    -stock
+    -currentStock
+    +getter()
+    +setter()
+}
+
+class BorrowInfo{
+    -readerId
+    -ISBN
+    -borrowTime
+    -deadline
+    -returnTime
+    -isReturn
+    +getter()
+    +setter()
+}
+package "user"{
+abstract Class User{
+
+}
+    class Reader{
+            -id
+            -password
+            -name
+            -role
+            -maxBorrowNum
+            -maxBorrowDays
+            +getter()
+            +setter()
+    }
+
+    class Manager{
+        -id
+        -password
+        -name
+        -role
+        +getter()
+        +setter()
+    }
+}
+Reader --|> User
+Manager --|> User
+Reader "n" -- "n" Book:> borrow,search,order
+(Reader,Book) .. BorrowInfo
+Manager "n" -- "n" Book:> lend,return,maintain
+Manager -- Reader: > maintain
+
+@enduml

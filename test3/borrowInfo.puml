@@ -1,0 +1,10 @@
+@startuml
+object borrowInfo{
+    readerId = 201510414422
+    ISBN = "978-7-308-17148-9"
+    borrowTime = 2018-4-17"
+    deadline = 2018-05-15
+    returnTime = 0000-00-00
+    isReturn = false
+}
+@enduml

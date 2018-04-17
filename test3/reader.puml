@@ -1,0 +1,10 @@
+@startuml
+object reader{
+    id = 201510414422
+    password = "123456"
+    name= "yds"
+    role = "r"
+    maxBorrowNum = 10
+    maxBorrowDay s= 60
+}
+@enduml
