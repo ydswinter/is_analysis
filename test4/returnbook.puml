@@ -1,0 +1,42 @@
+@startuml
+actor Manager as m
+participant System as s
+participant IDCard as c
+database Database as d
+
+m -> s:请求登录
+s -> d:查询数据
+alt 存在数据
+    d --> s:返回数据
+    alt 认证成功
+        s --> m:登录成功
+        m -> s:点击还书
+        s -> m:请求验证借书卡
+        m --> s:提供借书卡
+        s -> c:扫描借书卡
+        c --> s:返回数据
+        s -> d:查询借书卡数据
+        d --> s:返回借书卡数据
+        s --> m:返回未还图书信息
+        loop 存在未还图书
+            m -> s:点击归还
+            s -> d:生成归还记录
+            s -> d:修改图书状态和可借数量
+        else 不存在未还图书
+            s --> m:不存在未还图书
+        end
+    else 认证失败
+        s --> m:拒绝登录
+        note right of m
+            1.密码错误
+            2.登录限制
+        end note
+    end
+else 不存在数据
+    d -->s:不存在数据
+    s -->m:认证失败，拒绝登录
+    note right of m
+        用户不存在
+    end note
+end
+@enduml
