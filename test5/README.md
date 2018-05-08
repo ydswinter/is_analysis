@@ -67,10 +67,10 @@
 
 ### 3.1用户登录
 
-功能：用户（管理员、读者）登录
-请求地址：http://localhost:8080/library/user/login  
-请求方法：POST  
-请求参数：  
+功能：用户（管理员、读者）登录<br/>
+请求地址：http://localhost:8080/library/user/login<br/>
+请求方法：POST<br/>
+请求参数：<br/>
 
 |参数名称|必填|说明|    
 |:-:|:-:|:-:|  
@@ -97,10 +97,10 @@
 
 ### 3.2查询图书
 
-功能：查询图书信息  
-请求地址：http://localhost:8080/library/book/query  
-请求方法：POST
-请求参数：
+功能：查询图书信息<br/>
+请求地址：http://localhost:8080/library/book/query<br/>
+请求方法：POST<br/>
+请求参数：<br/>
 |参数名称|必填|说明|       
 |:-:|:-:|:-:|  
 |keyword|是|关键词|  
