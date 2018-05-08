@@ -71,10 +71,11 @@
 请求地址：http://localhost:8080/library/user/login  
 请求方法：POST  
 请求参数：  
+
 |参数名称|必填|说明|    
 |:-:|:-:|:-:|  
-|account|是||  
-|password|是||  
+|account|是|账号|  
+|password|是|密码|  
 |role|是|用于验证登录角色|  
 
 返回实例：
@@ -100,8 +101,8 @@
 请求地址：http://localhost:8080/library/book/query  
 请求方法：POST
 请求参数：
-|参数名称|必填|说明|      
-|:-:|:-:|:-:|    
+|参数名称|必填|说明|       
+|:-:|:-:|:-:|  
 |keyword|是|关键词|  
 |type|是|默认为ISBN查询,可选有name,publisher,editor|  
 |sort|是|排序方法|  
