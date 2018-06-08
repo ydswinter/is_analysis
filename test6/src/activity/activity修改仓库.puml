@@ -1,0 +1,10 @@
+@startuml
+title 修改仓库活动图
+start
+:点击用户名;
+:点击修改仓库;
+:输入github用户名;
+:点击保存;
+:修改成功或失败;
+end
+@enduml

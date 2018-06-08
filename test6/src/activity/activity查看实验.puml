@@ -1,0 +1,7 @@
+@startuml
+title 查看实验活动图
+start
+:点击查看;
+:获取实验内容详情;
+end
+@enduml

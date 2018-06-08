@@ -28,8 +28,8 @@ class BaseCourse{
 class SelectedCourse extends BaseCourse{
     selected_course_id（选课id）
     semester（开课学期）
-    teacher_id（开课老师id)
-    student_id（选课学生id)
+    teacher_id（开课老师id）
+    student_id（选课学生id）
 }
 
 class Test{
@@ -49,13 +49,13 @@ class TestItem{
 }
 
 class TotalGrade{
-    total_grade_id（总分id）
+    total_grade_id（实验总分id）
     test_id（实验id）
     result（总分）
 
 }
 class ItemGrade{
-    item_grade_id（评分项id）
+    item_grade_id（评分项分数id）
     student_id（学号）
     test_item_id（评分项id）
     result（分数）
@@ -66,6 +66,7 @@ class ItemGrade{
 Test "1"--"n" TestItem
 SelectedCourse "1" - "n" Test
 ItemGrade "1"-"1" TestItem
-ItemGrade "1"-"n" Student
+ItemGrade "n"-"1" Student
 ItemGrade "n"-"1" TotalGrade
+TotalGrade "1"-"1" Test
 @enduml

@@ -1,0 +1,9 @@
+@startuml
+title 修改实验活动图
+start
+:点击查看;
+:修改实验内容;
+:点击保存;
+:修改成功或失败;
+end
+@enduml
