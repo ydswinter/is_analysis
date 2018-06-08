@@ -1,0 +1,11 @@
+@startuml
+title 删除实验顺序图
+actor Teacher as t
+participant System as s
+database Database as d
+
+t->s:请求删除实验
+s->d:删除数据
+d->s:删除成功
+s->t:删除成功
+@enduml

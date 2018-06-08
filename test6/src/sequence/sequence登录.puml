@@ -1,0 +1,16 @@
+@startuml
+title 登录顺序图
+actor User as u
+participant System as s
+database Database as d
+
+u->s:请求登录
+s->d:查询用户数据
+alt 存在用户数据
+    d-->s:存在用户数据
+    s-->u:允许登录并返回学生列表页面
+else 不存在用户数据
+    d-->s:不存在用户数据
+    s-->u:拒绝登录
+end
+@enduml

@@ -1,0 +1,16 @@
+@startuml
+title 修改仓库顺序图
+actor User as u
+participant System as s
+database Database as d
+
+u->s:请求写入新的仓库地址
+s->d:写入数据
+alt 写入成功
+    d-->s:写入成功
+    s-->u:显示写入成功
+else 写入失败
+    d-->s:写入失败
+    s-->u:显示写入失败
+end
+@enduml

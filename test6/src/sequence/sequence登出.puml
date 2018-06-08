@@ -1,0 +1,8 @@
+@startuml
+title 登出顺序图
+actor User as u
+database cookies as c
+
+u->c:登出
+c-->u:清除登录信息
+@enduml

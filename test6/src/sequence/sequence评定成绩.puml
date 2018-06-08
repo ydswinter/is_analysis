@@ -1,0 +1,10 @@
+@startuml
+actor Teacher as t
+participant System as s
+database Database as d
+
+t->s:提交评改信息
+s->d:写入数据
+d-->s:写入成功
+s-->t:
+@enduml

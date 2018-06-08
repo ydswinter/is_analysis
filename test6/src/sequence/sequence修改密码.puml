@@ -1,0 +1,12 @@
+@startuml
+title 修改密码顺序图
+actor User as u
+participant System as s
+database Database as d
+
+u->u:填写新密码
+u->s:请求更新密码
+s->d:更新数据
+d-->s:更新成功
+s-->u:更新成功
+@enduml

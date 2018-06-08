@@ -1,0 +1,25 @@
+@startuml
+title 学生列表顺序图
+actor User as u
+participant System as s
+database Database as d
+
+u->s:查询该用户的课程数据
+s->d:查询数据
+alt 存在数据
+    d-->s:返回数据
+    s-->u:返回课程数据
+    u->s:查询选定课程的选课学生列表
+    s->d:查询数据
+    alt 存在数据
+        d-->s:返回数据
+        s-->u:返回该课程的学生列表数据
+    else 不存在数据
+        d-->s:不存在数据
+        s-->u:不存在数据
+    end
+else 数据不存在
+    d->s:数据不存在
+    s->u:数据不存在
+end
+@enduml

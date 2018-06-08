@@ -1,0 +1,12 @@
+@startuml
+title 修改实验顺序图
+actor Teacher as t
+participant System as s
+database Database as d
+
+t->t:修改实验内容
+t->s:提交新的实验内容
+s->d:更新数据
+d-->s:更新成功
+s-->t:修改成功
+@enduml

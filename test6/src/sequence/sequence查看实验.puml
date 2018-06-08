@@ -1,0 +1,11 @@
+@startuml
+title  查看实验顺序图
+actor Teacher as t
+participant System as s
+database Database as d
+
+t->s:提交新的实验信息
+s->d:写入数据
+d-->s:写入成功
+s-->t:添加成功
+@enduml

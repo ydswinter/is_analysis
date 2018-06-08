@@ -1,0 +1,14 @@
+@startuml
+title 登录活动图
+start
+:输入用户名和密码\n选择登录角色;
+:点击登录;
+if(登录成功) then(是)
+:登录成功;
+:进入学生列表界面;
+else(否)
+:提示登录失败;
+endif
+end
+
+@enduml

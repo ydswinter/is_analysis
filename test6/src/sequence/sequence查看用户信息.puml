@@ -1,0 +1,11 @@
+@startuml
+title 查看用户信息顺序图
+actor User as u
+participant System as s
+database Database as d
+
+u->s:查询用户信息
+s->d:查询用户数据
+d-->s:返回用户数据
+s-->u:返回用户信息
+@enduml

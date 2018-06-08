@@ -1,0 +1,30 @@
+@startuml
+actor teacher
+actor student
+actor user
+user <|-- teacher
+user <|-- student
+
+package 用户用例集{
+    user --up-> (登录)
+    user --up-> (查看信息)
+    user --up-> (修改仓库)
+    user --up-> (修改密码)
+    user --up-> (登出)
+}
+
+package 业务用例集{
+    teacher ---> (学生列表)
+    teacher ---> (添加实验)
+    teacher ---> (查看实验)
+    teacher ---> (修改实验)
+    teacher ---> (查看成绩)
+    teacher ---> (删除实验)
+
+    teacher ---> (评定成绩)
+    student ---> (查看成绩)
+    student ---> (学生列表)
+    student ---> (查看实验)
+
+}
+@enduml
