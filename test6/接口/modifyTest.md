@@ -1,8 +1,8 @@
 ### 接口：modifyTest
 用例：<a href="用例/修改实验.md">修改实验</a>
-<li>功能：查看用户信息</li>
-<li>权限：平台用户</li>
-<li>API请求地址：/user/getUserInfo</li>
+<li>功能：修改实验</li>
+<li>权限：老师</li>
+<li>API请求地址：/api/modifyTest</li>
 <li>请求方式：POST/li>
 <li>请求实例：</li>
 

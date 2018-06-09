@@ -2,7 +2,7 @@
 用例：<a href="用例/查看用户信息.md">查看用户信息</a>
 <li>功能：查看用户信息</li>
 <li>权限：平台用户</li>
-<li>API请求地址：/user/getUserInfo</li>
+<li>API请求地址：/api/getUserInfo</li>
 <li>请求方式：GET</li>
 <li>请求实例：</li>
 

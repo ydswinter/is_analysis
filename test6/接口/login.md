@@ -2,7 +2,7 @@
 用例：<a href="用例/登录.md">登录</a>
 <li>功能：登录到系统</li>
 <li>权限：平台用户</li>
-<li>API请求地址：/user/login</li>
+<li>API请求地址：/api/login</li>
 <li>请求方式：POST</li>
 <li>请求实例：</li>
 

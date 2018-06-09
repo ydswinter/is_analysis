@@ -1,8 +1,8 @@
 ### 接口：modifyRepository
 用例：<a href="用例/修改仓库.md">修改仓库</a>
-<li>功能：查看用户信息</li>
+<li>功能：修改仓库</li>
 <li>权限：平台用户</li>
-<li>API请求地址：/user/getUserInfo</li>
+<li>API请求地址：/api/modifyRepository</li>
 <li>请求方式：POST</li>
 <li>请求实例：</li>
 

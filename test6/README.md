@@ -16,9 +16,10 @@
 ## 2.系统总体结构
 
 ![](实验管理系统总体结构.png)
+
 界面设计参见<a href="ui_png">./ui_png</a>
 
-## 3.用例图设计<a href="src/usercase实验管理系统.puml">源码</a>
+## 3.用例图设计<a href="src/usecase实验管理系统.puml">源码</a>
 
 ![](usecase实验管理系统.png)
 
@@ -29,17 +30,17 @@
 <li><a href="数据库设计.md">参见数据库设计</a></li>
 
 ## 6.用例及界面详细设计
-<li><a href="用例/修改仓库.md">修改仓库用例</a><a href="ui_png/modifyrepositorypopwindow.png">界面</a></li>
-<li><a href="用例/修改实验.md>修改实验用例</a><a href="ui_png/addexperiment.png">界面</a></li>
-<li><a href="用例/修改密码.md">修改密码用例</a><a href="ui_png/modifypasswordpopwindow.png">界面</a></li>
-<li><a href="用例/删除实验.md"></a><a href="ui_png/mycoursebyteacher.png">界面</a></li>
-<li><a href="用例/学生列表.md></a><a href="ui_png/studentlistbyteacher.png">界面（教师）</a><a href="ui_png/studentlistbyteacher">界面（学生）</a></li>
-<li><a href="用例/实验列表.md"></a><a href="ui_png/mycoursebyteacher.png">界面（教师）</a><a href="ui_png/mycoursebystudent">界面（学生）</a></li>
-<li><a href="用例/查看实验.md"></a><a href="ui_png/addexperiment.png">界面</a></li>
-<li><a href="用例/查看实验成绩.md"></a><a href="ui_png/memo.png">界面</a></li>
-<li><a href="用例/查看用户信息.md"></a><a href="ui_png/userinfopopwindow.png>界面</a></li>
-<li><a href="用例/添加实验.md"></a><a href="ui_png/addexperiment.png">界面</a></li>
-<li><a href="用例/登录.md"></a><a href="ui_png/index.png">界面</a></li>
+<li><a href="用例/修改仓库.md">修改仓库用例</a>，<a href="ui_png/modifyrepositorypopwindow.png">界面</a></li>
+<li><a href="用例/修改实验.md">修改实验用例</a>，<a href="ui_png/addexperiment.png">界面</a></li>
+<li><a href="用例/修改密码.md">修改密码用例</a>，<a href="ui_png/modifypasswordpopwindow.png">界面</a></li>
+<li><a href="用例/删除实验.md">删除实验用例</a>，<a href="ui_png/mycoursebyteacher.png">界面</a></li>
+<li><a href="用例/学生列表.md">学生列表用例</a>，<a href="ui_png/studentlistbyteacher.png">界面（教师）</a>，<a href="ui_png/studentlistbyteacher">界面（学生）</a></li>
+<li><a href="用例/实验列表.md">实验列表用例</a>，<a href="ui_png/mycoursebyteacher.png">界面（教师）</a>，<a href="ui_png/mycoursebystudent">界面（学生）</a></li>
+<li><a href="用例/查看实验.md">查看实验用例</a>，<a href="ui_png/addexperiment.png">界面</a></li>
+<li><a href="用例/查看实验成绩.md">查看实验成绩用例</a>，<a href="ui_png/memo.png">界面</a></li>
+<li><a href="用例/查看用户信息.md">查看用户信息用例</a>，<a href="ui_png/userinfopopwindow.png>界面</a></li>
+<li><a href="用例/添加实验.md">添加实验用例</a，><a href="ui_png/addexperiment.png">界面</a></li>
+<li><a href="用例/登录.md">登录用例</a>，<a href="ui_png/index.png">界面</a></li>
 
 
 
