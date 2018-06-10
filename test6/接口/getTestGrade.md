@@ -7,7 +7,7 @@
 <li>请求实例：</li>
 
 ```json
-{"student_id","test_id"}
+{"student_id":"1","test_id":"1"}
 ```
 
 <li>参数说明</li>
